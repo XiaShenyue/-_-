@@ -22,5 +22,4 @@ async def on_member_remove(member):
     print(f'{member} left')
 
 
-client.run('MTAzNDQ0ODgwMzM4NzkzNjc4MA.GjZIcJ.chIJZeVaNiqIm8Ji0fPx81kMVrL2k3Q31FICII')
-
+client.run
