@@ -1,0 +1,26 @@
+import discord
+
+
+
+intents = discord.Intents.all()
+intents = discord.Intents(messages=True, guilds=True)
+client = discord.Client(intents=intents)
+
+
+@client.event
+async def on_ready():
+    print(f'{client.user} bot is online')
+
+@client.event
+async def on_member_join(member):
+    print(f'{member} join')
+
+
+
+@client.event
+async def on_member_remove(member):
+    print(f'{member} left')
+
+
+client.run('MTAzNDQ0ODgwMzM4NzkzNjc4MA.GjZIcJ.chIJZeVaNiqIm8Ji0fPx81kMVrL2k3Q31FICII')
+
